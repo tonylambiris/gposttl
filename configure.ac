@@ -1,5 +1,9 @@
-AC_INIT([gposttl], [0.9.3], [gmhossain@gmail.com]) 
+AC_INIT([gposttl], [0.9.3], [gmhossain@gmail.com])
 AM_INIT_AUTOMAKE([ -Wall -Werror foreign])
+
+AM_PROG_AR
+LT_INIT([shared disable-static])
+
 AC_PROG_CC
 AC_PROG_INSTALL
 
